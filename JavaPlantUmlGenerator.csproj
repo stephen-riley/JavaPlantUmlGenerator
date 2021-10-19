@@ -1,0 +1,27 @@
+<!-- Template generated code from Antlr4BuildTasks.Template v 8.14 -->
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>AntlrTemplate</RootNamespace>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Antlr4 Include="Java9Lexer.g4">
+      <Package>JavaPlantUmlGenerator</Package>
+    </Antlr4>
+    <Antlr4 Include="Java9Parser.g4">
+      <Package>JavaPlantUmlGenerator</Package>
+    </Antlr4>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Antlr4.Runtime.Standard" Version="4.9.2" />
+    <PackageReference Include="Antlr4BuildTasks" Version="8.14" PrivateAssets="all" />
+  </ItemGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>3021;1701;1702</NoWarn>
+  </PropertyGroup>
+
+</Project>
